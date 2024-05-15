@@ -26,13 +26,9 @@ http://97.74.86.12:7000/closecontacts/Ramsay Bolton/date/2021-02-28T00:00:00.000
 
 
 Architectural Decisions
+
 Choice of Express.js
-We chose Express.js for its efficiency and simplicity, enabling us to quickly develop lightweight APIs. Its robust routing and middleware capabilities allow for rapid implementation of complex functionalities with minimal code.
+Express.js was chosen for its efficiency and simplicity, enabling quick development of lightweight APIs. Its robust routing and middleware capabilities allow for the rapid implementation of complex functionalities with minimal code.
 
 Using Node.js and JavaScript for JSON Handling
-Node.js and JavaScript are ideal for handling our JSON-formatted data source due to JavaScript's native support for JSON. This integration simplifies our codebase, enhances performance, and eliminates the need for additional parsing tools.
-
-
-
-
- 
+Node.js and JavaScript were selected to handle JSON-formatted data sources due to JavaScript's native support for JSON. This integration simplifies the codebase, enhances performance, and eliminates the need for additional parsing tools. 
