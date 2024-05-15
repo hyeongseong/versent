@@ -1,0 +1,38 @@
+This document provides detailed descriptions of the API endpoints, examples of how to use them, and explanations of the architectural decisions made during the development of the API.
+
+
+API Definitions
+
+1. Get Persons by Location and Date
+Endpoint: GET /locations/:location/date/:date
+Description: Fetches all persons who visited a specified location on a particular date.
+Example Usage:
+http://97.74.86.12:7000/locations/Ashemark/date/2021-02-04T00:00:00.000Z
+
+
+2. Get Locations Visited by Person on Date
+Endpoint: GET /persons/:person/date/:date
+Description: Retrieves all locations visited by a person on a specific date.
+
+Example Usage:
+http://97.74.86.12:7000/persons/Ramsay Bolton/date/2021-02-28T00:00:00.000Z
+
+3. Identify Close Contacts
+Endpoint: GET /closecontacts/:person/date/:date
+Description: Identifies all close contacts for a person based on visits to the same location on the same date.
+
+Example Usage:
+http://97.74.86.12:7000/closecontacts/Ramsay Bolton/date/2021-02-28T00:00:00.000Z
+
+
+Architectural Decisions
+Choice of Express.js
+We chose Express.js for its efficiency and simplicity, enabling us to quickly develop lightweight APIs. Its robust routing and middleware capabilities allow for rapid implementation of complex functionalities with minimal code.
+
+Using Node.js and JavaScript for JSON Handling
+Node.js and JavaScript are ideal for handling our JSON-formatted data source due to JavaScript's native support for JSON. This integration simplifies our codebase, enhances performance, and eliminates the need for additional parsing tools.
+
+
+
+
+ 
